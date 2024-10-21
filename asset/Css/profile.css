@@ -1,0 +1,248 @@
+body {
+  background: var(--lightBg);
+  color: var(--darkText);
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.profile-main {
+  flex-basis: 73%;
+}
+
+.profile-sidebar {
+  flex-basis: 25%;
+  align-self: flex-start;
+  position: sticky;
+  top: 73%;
+}
+.profile-container {
+  background-color: var(--whiteBg);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.profile-container-inner {
+  padding: 0 4% 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  margin-top: -75px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0px 4px #fff;
+  background-color: var(--whiteBg);
+}
+.profile-container h1 {
+  color: var(--darkText);
+  font-size: 25px;
+  font-weight: 500;
+}
+.profile-container b {
+  display: inline-block;
+  margin-top: 15px;
+  color: #3a2d4d;
+}
+.profile-container p {
+  margin-top: 10px;
+}
+.profile-container p a {
+  text-decoration: none;
+  color: #3e4edd;
+}
+.mutual-connection {
+  display: flex;
+  align-items: center;
+}
+
+.mutual-connection img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.profile-btn {
+  margin: 20px 0;
+}
+
+.profile-btn a {
+  display: inline-flex;
+  align-items: center;
+  background-color: #a3a3a3;
+  color: var(--darkText);
+  margin-right: 10px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px black;
+}
+.profile-btn a img {
+  width: 20px;
+  margin-right: 10px;
+}
+.profile-btn .primary-btn {
+  background-color: #176be9;
+  color: #fff;
+}
+
+.profile-description {
+  background-color: var(--whiteBg);
+  margin: 12px 0;
+  padding: 20px 4% 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.profile-description h2 {
+  color: #333;
+  margin: 10px 0 20px;
+  font-weight: 700;
+}
+.see-more-link {
+  display: block;
+  text-align: right;
+  font-style: 15px;
+}
+.profile-desc-row {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.profile-desc-row img {
+  width: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+.profile-desc-row div {
+  width: 100%;
+}
+.profile-desc-row div h3 {
+  font-size: 18px;
+}
+.profile-desc-row b {
+  display: block;
+  margin: 5px 0 10px;
+}
+
+.profile-desc-row hr {
+  display: block;
+  margin-top: 15px;
+}
+.experince-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experince-link img {
+  display: block;
+  margin-bottom: 25px;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.skills-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 6px 18px;
+  border: 1px solid #777;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #121;
+  transition: all 0.5s;
+}
+.skills-btn:hover {
+  opacity: 0.5;
+}
+.language-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 6px 18px;
+  background-color: #e4e6eb;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.profile-sidebar {
+  top: 73px;
+}
+
+.profile-sidebar .sidebar-ad {
+  margin: 0;
+}
+.sidebar-people {
+  background-image: #fff;
+  padding: 15px 25px;
+  margin: 8px 0;
+  font-size: 12px;
+}
+.sidebar-people h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+.sidebar-people-row {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+  background-color: var(--whiteBg);
+  padding: 10px 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.282);
+}
+
+.sidebar-people-row img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+.sidebar-people-row h2 {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.sidebar-people-row p {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.sidebar-people-row a {
+  display: inline-block;
+  border-radius: 25px;
+  border: 1px solid rgba(100, 100, 198, 0.8);
+  margin-top: 15px;
+  padding: 5px 15px;
+  font-size: 12px;
+  transition: all 0.6s;
+  user-select: none;
+}
+.sidebar-people-row a:hover {
+  background-color: #176be9;
+  color: #fff;
+}
+.profile-footer {
+  padding: 0 60px;
+}
+
+@media only screen and (max-width: 750px) {
+  .profile-main {
+    flex-basis: 100%;
+  }
+  .profile-sidebar {
+    flex-basis: 100%;
+    top: unset;
+    position: relative;
+  }
+  .sidebar-people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sidebar-people .people-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .sidebar-people-row{
+    flex-basis: 30%;
+  }
+}

@@ -5,20 +5,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LinkedIn</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="asset/Css/style.css">
+
 </head>
 
 <body>
-	<div class="navbar">
+	<nav class="navbar">
 		<div class="nav-left">
-			<a href="./index.html" class="logo
+			<button class="modeSwitcher">
+
+				<span class="material-symbols-outlined modIcon">
+					dark_mode
+				</span>
+			</button>
+			<a href="https://linkedin.com" class="logo
 			">
 				<img src="images/logo.png" alt=""></a>
 
-				<div class="search-box">
-					<img src="images/search.png" alt="">
-					<input type="text" placeholder="Search">
-				</div>
+			<div class="search-box">
+				<img src="images/search.png" alt="">
+				<input type="text" placeholder="Search">
+			</div>
 		</div>
 		<div class="nav-center">
 			<ul>
@@ -35,8 +49,498 @@
 
 			</div>
 		</div>
+
+		<!-- profile dropdown  -->
+		<div class="profile-menu-wrap" id="profileMenu">
+			<div class="profile-menu">
+				<div class="user-info">
+					<img src="images/user-1.png" alt="">
+					<div>
+						<h3>Royan WIlton</h3>
+						<a href="./profile.html">See your profile</a>
+					</div>
+				</div>
+				<hr>
+				<a href="#" class="profile-menu-link">
+					<img src="images/feedback.png" alt="">
+					<p class="link-menu-profile">GIve feedback</p>
+					<span>&gt</span>
+				</a>
+				<a href="#" class="profile-menu-link">
+					<img src="images/setting.png" alt="">
+					<p class="link-menu-profile">Setting & Privacy</p>
+					<span>&gt</span>
+				</a>
+				<a href="#" class="profile-menu-link">
+					<img src="images/help.png" alt="">
+					<p class="link-menu-profile">Help</p>
+					<span>&gt</span>
+				</a>
+				<a href="#" class="profile-menu-link">
+					<img src="images/display.png" alt="">
+					<p class="link-menu-profile">DIsplay & Accessibility</p>
+					<span>&gt</span>
+				</a>
+				<a href="#" class="profile-menu-link">
+					<img src="images/logout.png" alt="">
+					<p class="link-menu-profile">Logout</p>
+					<span>&gt</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- navbar close  -->
+
+	<div class="container">
+		<div class="left-sidebar">
+			<div class="sidebar-profile-box">
+				<img src="images/cover-pic.png" width="100%" alt="">
+				<div class="sidebar-profile-info">
+					<img src="images/user-1.png" alt="">
+					<h1>Ryan Walton</h1>
+					<h3>Web Developer at Microsoft</h3>
+					<ul>
+						<li>Your profile view <span class="viewCount"></span></li>
+
+						<li>your post view <span class="viewCount"></span></li>
+
+						<li>your connection <span class="viewCount"></span></li>
+					</ul>
+				</div>
+				<div class="sidebar-profile-link">
+					<a href="#"><img src="images/items.png" alt="">My Items</a>
+					<a href="#"><img src="images/premium.png" alt="">Try premium</a>
+				</div>
+			</div>
+
+			<div class="sidebar-activity selectNone">
+				<h3>Recent</h3>
+				<a href="#"><img src="images/recent.png" alt="">Web Developement</a>
+				<a href="#"><img src="images/recent.png" alt="">User Interface</a>
+				<a href="#"><img src="images/recent.png" alt="">Online Learning </a>
+				<a href="#"><img src="images/recent.png" alt="">Learn Online</a>
+				<a href="#"><img src="images/recent.png" alt="">Code Better</a>
+				<a href="#"><img src="images/recent.png" alt="">Group Learning</a>
+				<h3>GROUPS</h3>
+				<a href=""><img src="images/group.png" alt="">Web Design Group</a>
+				<a href=""><img src="images/group.png" alt="">Html & CSS learners</a>
+
+				<a href=""><img src="images/group.png" alt="">Python & Javascript learners</a>
+				<a href=""><img src="images/group.png" alt="">Learn Coding Online</a>
+				<h3>HASHTAG</h3>
+				<a href=""><img src="images/hashtag.png" alt="">Web Developement</a>
+				<a href=""><img src="images/hashtag.png" alt="images/hashtag.png">User Inerface</a>
+				<a href=""><img src="images/hashtag.png" alt="images/hashtag.png">Online Learning</a>
+				<div class="discover-more-link">
+					<a href="https://play.google.com/store">Discover More App</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="create-post">
+				<div class="create-post-input">
+					<img src="images/user-1.png" alt="">
+					<textarea rows="2" placeholder="Write a post"></textarea>
+				</div>
+				<div class="create-post-link">
+					<li><img src="images/photo.png" alt="">Photo</li>
+					<li><img src="images/video.png" alt="">Video</li>
+					<li><img src="images/event.png" alt="">Event</li>
+					<li>Post</li>
+				</div>
+			</div>
+			<div class="sort-by">
+				<hr>
+				<p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+			</div>
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-3.png" alt="">
+					<div>
+						<h1>Muther Jan</h1>
+						<small>Founder and CEO at Mail Max</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur corporis ducimus
+					non obcaecati cum ullam quisquam labore, laborum consequatur accusantium assumenda aut neque
+					deleniti quibusdam delectus nostrum officia culpa provident repellat sint ipsam voluptatum! Amet,
+					dolor fugiat. Corrupti beatae impedit qui perspiciatis inventore sapiente sint minus ex molestias
+					et?
+				</p>
+				<img src="images/post-image-1.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-2.png" alt="">
+					<div>
+						<h1>Cisco Luke</h1>
+						<small>Web Designer</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat perferendis natus ipsum
+					ex voluptatum, eius ducimus quos eum explicabo cumque illum, pariatur porro distinctio
+					exercitationem fugit fuga ad? Odit nesciunt quo, pariatur culpa facilis dolor modi eligendi ad
+					doloribus non! Temporibus vitae quo obcaecati unde magni animi earum beatae, sed impedit aliquam? In
+					repudiandae deserunt quas eveniet est, perspiciatis, magni temporibus molestias veniam obcaecati
+					modi necessitatibus fugit, dolores nisi aliquam quia nam. Minus, doloremque.
+				</p>
+				<img src="images/post-image-3.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-4.png" alt="">
+					<div>
+						<h1>Muther Jan</h1>
+						<small>Founder and CEO at Mail Max</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur corporis ducimus
+					non obcaecati cum ullam quisquam labore, laborum consequatur accusantium assumenda aut neque
+					deleniti quibusdam delectus nostrum officia culpa provident repellat sint ipsam voluptatum! Amet,
+					dolor fugiat. Corrupti beatae impedit qui perspiciatis inventore sapiente sint minus ex molestias
+					et?
+				</p>
+				<img src="images/post-image-4.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-5.png" alt="">
+					<div>
+						<h1>Muther Jan</h1>
+						<small>Founder and CEO at Mail Max</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur corporis ducimus
+					non obcaecati cum ullam quisquam labore, laborum consequatur accusantium assumenda aut neque
+					deleniti quibusdam delectus nostrum officia culpa provident repellat sint ipsam voluptatum! Amet,
+					dolor fugiat. Corrupti beatae impedit qui perspiciatis inventore sapiente sint minus ex molestias
+					et?
+				</p>
+				<img src="images/post-image-5.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-3.png" alt="">
+					<div>
+						<h1>Muther Jan</h1>
+						<small>Founder and CEO at Mail Max</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur corporis ducimus
+					non obcaecati cum ullam quisquam labore, laborum consequatur accusantium assumenda aut neque
+					deleniti quibusdam delectus nostrum officia culpa provident repellat sint ipsam voluptatum! Amet,
+					dolor fugiat. Corrupti beatae impedit qui perspiciatis inventore sapiente sint minus ex molestias
+					et?
+				</p>
+				<img src="images/post-image-1.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="post-author">
+					<img src="images/user-1.png" alt="">
+					<div>
+						<h1>John Graham</h1>
+						<small>Matketing Manager at Pi</small>
+						<small>1 hrs ago</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repellat consequatur! Mollitia quidem
+					quos, nobis cumque tenetur magnam sunt alias error sequi nihil in quo impedit laudantium, laboriosam
+					labore iure aut? Laudantium, nam. Laborum dolorem molestiae, aperiam ullam dignissimos, atque,
+					voluptas esse repellat nesciunt voluptatibus tempore facilis et earum cupiditate omnis
+					reprehenderit! Mollitia sapiente eligendi tempore a necessitatibus laboriosam. Modi quisquam
+					delectus unde velit distinctio eius architecto doloremque commodi autem ducimus! Velit mollitia
+					possimus quo ad nam exercitationem modi dicta?
+				</p>
+				<img src="images/post-image-2.png" alt="" width="100%">
+				<div class="post-stats selectNone">
+					<div>
+						<img src="images/thumbsup.png" alt="">
+						<img src="images/love.png">
+						<img src="images/clap.png" alt="">
+						<span class="likedUser">
+							Anhisha and 750 others
+						</span>
+					</div>
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+				<div class="post-activity selectNone">
+					<div class="post-activity-link">
+						<img src="images/user-1.png" class="post-activity-user-icon" alt="">
+						<img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+					</div>
+					<div class="post-activity-link">
+						<img src="images/like.png" alt="">
+						<span>Like</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/comment.png" alt="">
+						<span>Comment</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/share.png" alt="">
+						<span>Share</span>
+					</div>
+					<div class="post-activity-link">
+						<img src="images/send.png" alt="">
+						<span>Send</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-sidebar">
+			<div class="sidebar-news">
+				<img src="images/more.png" alt="" class="info-icon">
+				<h3>Trending News</h3>
+				<a href="#">Hign demend for skilled manpower</a>
+				<span>1d ago &middot, 10,934 readers</span>
+
+				<a href="#">Carrer, growing horizontally too.</a>
+				<span>10h ago &middot, 8285 readers</span>
+
+				<a href="#">more hiring = higher confidence</a>
+				<span>3d ago &middot, 28577 readers</span>
+
+				<a href="#">Zaw Min Soe is richest man of asia.</a>
+				<span> up coming 5years [infinity] readers</span>
+				<a href="https://news.google.com/" class="read-more-link">Read More</a>
+
+
+			</div>
+			<div class="sidebar-ad">
+				<small>AD &middot; &middot; &middot;</small>
+				<p>Maser the 5 principle of web design</p>
+
+				<div>
+					<img src="images/user-1.png" alt="">
+					<img src="images/mi-logo.png" alt="">
+				</div>
+				<b>Brand and Demand in Xiaomi</b>
+				<a href="#" class="ad-link">Learn More</a>
+			</div>
+			<div class="sidebar-useful-links">
+				<a href="">About</a>
+				<a href="">Accessibility</a>
+				<a href="">Help Center</a>
+				<a href="">Privacy policy</a>
+				<a href="">Get the App</a>
+				<div>
+
+
+					<a href="">More</a>
+
+				</div>
+				<div class="copyright-msg">
+					<img src="images/logo.png" alt="">
+					<p>Linkedup &#169; 2022. All right reserved</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="app.js"></script>
+	<script src="./asset/Js/post.js"></script>
+	<script src="asset/Js/app.js"></script>
+	<script>
+		let count = [52, 810, 205]
+		let span = document.querySelectorAll(".viewCount")
+
+		for (let i = 0; i <= span.length; i++) [
+
+			span[i].textContent = count[i]
+		]
+	</script>
 </body>
 
 </html>
